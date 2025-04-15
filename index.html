@@ -3,75 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    
+    <style>
+        body{
+            background-image: url("https://images.unsplash.com/photo-1604223190546-a43e4c7f29d7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D");
+            background-size: cover;
+            background-position: center;
+            
+        }
+        .page
+        {
+            color:rgb(195, 219, 240);
+            margin:auto;
+            margin-top:0%;
+            width:10%;
+            border-radius: 15%;
+            padding: 5%;
+            backdrop-filter: blur(20px);
+            text-align: center;
+            border: solid;
+            border-color: rgb(112, 190, 221);
+
+        }
+
+        .heading
+        {
+            font-family:'Times New Roman', Times, serif;
+            color:rgb(112, 190, 221);
+            padding:0%;
+            font-size: 200%;
+            height:auto
+    
+        }
+        .fields
+            {
+              
+                color: rgb(6, 51, 91);
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif;
+                border:none;
+                background-color: transparent;
+                
+            }
+            .fields input{
+                border:none;
+             
+                border-bottom: solid;
+                border-color: rgb(217, 232, 251);
+                background: transparent;
+                
+            }
+            .fields ::placeholder
+            {
+                color: rgb(237, 246, 243);
+            }
+            .fields button
+            {
+                border-radius: 10%; 
+               border:solid;
+               color: rgb(8, 52, 52);
+               background-color:rgba(0, 5, 9, 0.399);
+               width: 150%;
+               height: 50%;
+               color: rgb(179, 209, 236);
+               font-size: 100%;
+            }
+          
+            
+
+
+
+        
+    </style>
 </head>
 <body>
-    <h2>register</h2>
-    <p>
-        <input
-        type="text"
-        placeholder="enter your name"
-        name="first name"
-        id="first name" required/>
-    </p>
+    <form class="page" action="./login.html">
+        <div class="heading"><h2><i>register</i></h2></div>
+    <div class="fields">
+        <div>name:
+            <input
+             type="text"
+             placeholder="enter your name"
+             name="first name"
+             id="first name" required/>
 
-    <p>
-        <input
-        type="email"
-        placeholder="enter your email id"
-        name="email"
-        id="email"required/>
-    
-    </p>
 
-    <p>
-        <input
-        type="password"
-        placeholder="enter your password"
-        name="password"
-        id="password"required/>
-    </p>
+        </div>
+        <br>
+        <div>email id:
+                <input
+                 type="email"
+                 placeholder="enter your email id"
+                 name="email"
+                 id="email"required/>
 
-    <p>
-        <input
-        type="password"
-        placeholder="conform password"
-        name="password"
-        id="password"required/>
+        </div>
+        <br>
+        <div>password:
+            <input
+             type="password"
+              placeholder="enter your password"
+             name="password"
+             id="password" required/>
 
-    </p>
-    
-    <p>
-        <input 
-        type="number"
-        placeholder="enter your mobile number"
-        name="mobile"
-        id="mobile" required/>
-    </p>
-    
-    <p>
-        <input type="radio" id="male" name="gender"/>
-        <lable for="male">male</lable>
-        <input type="radio" id="female" name="gender"/>
-        <lable for="female">female</lable>
-    </p>
-
-    <p>
-        <input type="date" required/>
-        <lable for="">date if birth</lable>
-    </p>
-
-    
-    <p>
-        <text area name="address" id="address" placeholder="enter you address"required/>
+        </div>
+        <br>
+        <div>conform password: 
+              <input
+              type="password"
+              placeholder="conform password"
+              name="password"
+              id="password"required/>
+           
+        </div>
+        <br>
         
-    </p>
-    <p> 
-        <input type="text" placeholder="state" name="state" id="state"required/>
-        <input type="text" placeholder="pincode" name="pincode" id="pincode"required/>
-    </p>
+        <div>phone number:
+            <input 
+             type="number"
+             placeholder="enter your mobile number"
+             name="mobile"
+             id="mobile" required/>
 
-    <a href="login.html"><button type="button">Submit</button></a>
+        </div>
+        <br>
+        <div>Gender:  
+            <p>
+             <input type="radio" id="male" name="male"/>male
+             <input type="radio" id="female" name="female"/>female
+            </p>
+           
 
-</body>
-</html>
+        </div>
+        <br>
+        <div>Date of birth:  
+            <p>
+            <input type="date" required/>
+            <lable for="">date of birth</lable>
+           </p>
+    
+
+        </div>
+        <br>
+        <div>Address:  
+           
+        </div>
+        <div>
+            <p> 
+                <input type="text" placeholder="state" name="state" id="state"required/>
+               
+                <input type="text" placeholder="pincode" name="pincode" id="pincode"required/>
+            </p>
+        </div>
+        <div name="add">
+            <textarea name="address" class="fields" id="address" required placeholder="Enter your Address here"></textarea>
+        </div>
+        <br>
+        <a href="login.html"><button type="button">Submit</button></a>
+    </div>
+        </form>
+    </body>
+    </html>
+       
+            
+       
+    
+        
+        
+
+
+
+    
+ 
+
+
+      
+
+
+   
+     
+
+    
+    
+    
+       
+
+  
+
+  
+    
+    
+
+    

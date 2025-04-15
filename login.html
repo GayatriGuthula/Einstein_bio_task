@@ -3,21 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title> 
+    <style>
+        body{
+            background-image: url(https://images.unsplash.com/photo-1604223190546-a43e4c7f29d7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D);
+            background-repeat: no-repeat;
+            background-size:cover ;
+            background-position: center;
+            
+        
+        }
+        .form_body
+      {
+        margin:auto;
+        margin-top: 10%;
+        border:solid;
+        background: none;
+        backdrop-filter: blur(2px);
+        width:25%;
+        height: 20%;
+        text-align: center;
+        padding: 10px;
+        border-radius:5%;
+        border-color:rgb(110, 83, 155);
+        color: rgb(94, 77, 124);
+        font-family:'Times New Roman', Times, serif;
+      }     
+
+      .form_body input
+      {
+                border:none;
+                border-bottom: solid;
+                border-color: rgba(57, 18, 141, 0.981);
+                background: transparent;
+                font-family:'Times New Roman', Times, serif;
+                
+      }
+      .input
+      {
+        background: none;
+        color:rgb(151, 90, 185);
+      }
+      
+
+      .text_parameters 
+      {
+        color:rgb(121, 68, 155);
+        text-decoration: none;
+        font-style: italic;
+      }
+
+      .text_parameters ::placeholder
+      {
+        color:rgb(73, 51, 114);
+      }
+      
+      .heading
+      {
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    
+
+
+
+     .text_parameters button
+      {
+         border-radius: 30%;
+         border:solid;
+         color: rgb(3, 3, 42);
+         background-color:rgba(17, 2, 48, 0.248);
+         width: 100px;
+         height: 20%;
+         color: rgb(157, 199, 236);
+         font-size: 20px;
+      }
+        
+        
+        
+    
+    
+
+</style>
 </head>
 <body>
-    <h2>Login</h2>
+    <h1 class="heading">Login</h1>
+
+    <div class="text_parameters">
+
+    <div>User Name:
+     <input type="text" class="input" name="username" id="username" placeholder="Enter your user name" required/>
+    </div>
+    <br>
+
+    <div class="password">Password:
+     <input type="password" class="input" name="password" id="password" placeholder="Enter your password" required/>
+    </div>
+    <br>
+
+    <div>
+     <a href="">Forgot password?Click Here</a>
+    </div>
+    <br>
+    
+    <div>
+     <button>Next</button>
+    </div> 
+   </div>
+ 
+  
+        
+   
     <form>
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required><br><br>
-
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <button type="submit">Login</button><br><br>
-
-        <a href="">Forgot Password?</a><br><br>
-
         <a href="blog.html">Go to Blog</a>
     </form>
 </body>
